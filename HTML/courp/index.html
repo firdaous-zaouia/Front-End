@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court HTML</title>
+    <!-- Icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo-head.png">
+</head>
+<body>
+    <nav>
+        <!-- UL=Unordered List -->
+        <ul>
+            <li>Accueil</li>
+            <li>Boutique</li>
+            <li><a href="#form">Formulaire</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Ceci et un titre principal</h1>
+        <p>
+            Text classique <em>Text en italique</em><strong>Text en gras</strong>
+        </p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta. Libero, nemo, harum ipsum sit reiciendis eius nostrum tenetur tempore quia saepe hic omnis quod impedit doloremque ad enim est.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Order List</h2>
+            <ol>
+                <li>Ceci est une </li>
+                <li>liste dans </li>
+                <li>l'ordre</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Image en HTML</h3>
+            <img src="./job.jpg" height="200" alt="image-Section"/>
+
+            <div>
+                <h4>Tableaux</h4>
+                <table border="4"
+                 cellpadding="10" 
+                 cellspacing="4"
+                 style="text-align: center" >
+                    <!-- thead et pour l'entete du tableau -->
+                    <thead>
+                        <tr>
+                            <th>Col 1</th>
+                            <th>Col 2</th>
+                            <th>Col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Cell 1</td>
+                            <td>Cell 2</td>
+                            <td>Cell 3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Cell 4</td>
+                            <td>Cell 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h5><span>&#10151;</span>Les liens</h5>
+                <!-- _blank permet de creer un nouveau angle -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML cheat sheet</a>
+            </div>
+            <div>
+                <h6><i>&#128190;</i>Videos</h6>
+                <video src="./city.mp4" autoplay muted loop height="200"></video>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Les formulaires</h2>
+            <form action="">
+                <!-- for et id permet de lier le labelle a l'input -->
+                <label for="name">Nom</label>
+                <input type="text" id="name"
+                placeholder="Entre votre nom"/>
+
+                <br />
+
+                <label for="age">Entre votre Age</label>
+                <input type="number" id="age">
+
+                <br />
+
+                <!-- Input de type select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="Homme">Homme</option>
+                    <option selected="selected" value="Femme">Femme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <!-- Input de type radio -->
+                <div>
+                    <input type="radio" name="type" id="human" />
+                    <label for="human">Humain</label>
+
+                    <input type="radio" name="type" id="dog" />
+                    <label for="dog">Chien</label>
+
+                    <input type="radio" name="type" id="cat" />
+                    <label for="cat">Chat</label>
+                </div>
+                <textarea 
+                    placeholder="Votre message..."
+                   cols="20"
+                   rows="5"
+                ></textarea>
+                <br>
+                <!-- Input de type checkbox  -->
+                <input type="checkbox" name="" id="cgv" />
+                <label for="cgv">Accepter les conditions generales</label>
+
+                <input type="submit" 
+                value="Ceci est le bouton pour valider le formulaire"/>
+                
+            </form>
+            <button>ceci est un bouton</button>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
