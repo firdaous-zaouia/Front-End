@@ -18,7 +18,7 @@ h1{
 }
 
 main{
-    height: 500px;
+    min-height: 500px;
     width: 90%;
     background: rgb(238, 166, 102);
     margin: 0 auto;
@@ -31,5 +31,135 @@ main{
 h2{
     margin: 0;
 }
+
+.flexbox ,
+.grid,
+.absolute{
+    border: 2px solid skyblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    min-height: 150px;
+}
+
+/* FLEXBOX */
+/* set a repartir equitablement */
+
+.flexbox ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.flexbox li{
+    list-style: none;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    background: rgb(196, 181, 50);
+    /* center un unique element verticalement et horizantalement */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* GRID */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.grid img{
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "i1 i2"
+    "ta ta"
+    "vi bt";
+}
+
+input, textarea{
+    margin: 5px;
+    border: 1px solid darkorange;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "DMSerif";
+}
+textarea{
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit{
+    grid-area: bt;
+    cursor: pointer;
+    background: cyan;
+    transform: 0.2s;
+}
+
+#btn-submit:hover{
+    background: darkkhaki;
+    color: wheat;
+}
+
+/* ABSOLUTE */
+
+.absolute{
+    position: relative;
+}
+
+#circle1{
+    height: 80px;
+    width: 80px;
+    background: skyblue;
+    position: absolute;
+    border-radius: 150px;
+    top: -20px;
+    right: -20px;
+}
+
+#circle2{
+   height: 40px;
+   width: 40px;
+   background: tomato;
+   border-radius: 150px;
+   position: absolute; 
+   left: 50%;
+   transform: translateX(-50%);
+   top: 100px;
+}
+
+/* RESPENSIVE */
+@media screen and (max-width: 900px){
+    .grid-container{
+        display: block;
+    }
+    .grid-container img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:610px) {
+    form{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+
+    }
+}
+
 
 
