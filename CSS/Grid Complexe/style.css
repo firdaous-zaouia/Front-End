@@ -1,0 +1,36 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ch1 ch1 ch2"
+    "ch4 ch3 ch2"
+    "ch4 ch5 ch5";
+}
+
+div:nth-child(1){
+    background: yellow;
+    grid-area: ch1;
+    margin: 10px;
+}
+div:nth-child(2){
+    background: purple;
+    grid-area: ch2;
+    margin: 10px;
+}
+div:nth-child(3){
+    background: green;
+    grid-area: ch3;
+    margin: 10px;
+}
+div:nth-child(4){
+    background: red;
+    grid-area: ch4;
+    margin: 10px;
+}
+div:nth-child(5){
+    background: orchid;
+    grid-area: ch5;
+    margin: 10px;
+}
