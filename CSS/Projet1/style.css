@@ -66,3 +66,33 @@ h1{
     border: 1px solid white;
     margin: 2px;
 }
+.header-text{
+    width: 400px auto;
+}
+.header-text p{
+   display: block;
+   justify-content: center;
+   text-align: center; 
+   margin: 40px 150px;
+   font-weight: bold;
+}
+.icon-part{
+    background-color: rgb(22, 22, 22);
+    color: rgb(243, 241, 241);
+}
+.icone-part-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+   padding: 50px 100px;
+}
+.list-icon-part{
+margin: 0 30px;
+}
+.lip-logo img{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
