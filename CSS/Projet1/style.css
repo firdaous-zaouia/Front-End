@@ -104,21 +104,12 @@ h1{
     margin: 0 auto;
     font-weight: 900;
 }
-/* 
-*
-.header-text{
-    padding: 45px 0;
-    max-width: 1100px;
-    font-size: 1.2rem;
-    line-height: 34px;
-    margin: 0 auto;
-}
 .icon-part{
-    background: rgb(22, 21, 21);
+    background: rgb(21, 21, 21);
     padding: 65px 0;
     color: whitesmoke;
 }
-.icone-part-container{
+.icon-part-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -136,8 +127,10 @@ h1{
     margin: 0 auto 20px;
 }
 .icon-part button{
-   padding: 9px 32px;
+    padding: 9px 32px;
 }
+/* 
+*
 .News-part{
     background: rgba(245, 245, 245, 0.8);
     padding: 88px 0 45px;
