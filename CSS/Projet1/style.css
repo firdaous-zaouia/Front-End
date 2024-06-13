@@ -191,53 +191,52 @@ h1{
     margin-bottom: 15%;
     font-weight: 600;
 }
-/* 
 .link{
     text-align: left;
     position: absolute;
     bottom: 0;
 }
-.Main-news a{
-    text-transform: uppercase;
-    color: rgb(95,4,170);
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    font-weight: 900;
+.main-news a{
+  text-transform: uppercase;
+  color: rgb(95,4,170); 
+  font-size: 0.7rem; 
+  letter-spacing: 1px;
+  font-weight: 900;
 }
-.Main-news a:hover{
-    color: rgb(180, 180, 1) ;
+.main-news a:hover{
+    color:rgb(180, 180, 1) ;
 }
-.Main-news i{
+.main-news i{
     transform: translateX(5px);
 }
-.Contact{
+.contact{
     padding: 65px 0 20px;
     max-width: 1100px;
     margin: 0 auto;
 }
-.Contact-List{
+.contact-list{
     display: flex;
     justify-content: space-around;
     font-weight: 400;
     position: relative;
 }
-.Contact-List:after{
+.contact-list:after{
     content: "";
-    position: absolute;
+    position:absolute;
     width: 80%;
     height: 1px;
     background: rgb(235, 235, 235);
     bottom: -40px;
 }
-.Contact-List .list{
+.contact-list .list{
     text-align: left;
     width: 24%;
 }
-#Contact-img img{
+#contact-img img{
     display: block;
     margin: 0 auto;
 }
-.Contact-List h3{
+.contact-list h5{
     text-transform: uppercase;
     font-size: 1rem;
     margin-bottom: 15px;
@@ -249,10 +248,129 @@ h1{
     line-height: 22px;
     margin-bottom: 15px;
 }
-.list h3{
+.list h6{
     font-size: 0.8rem;
     margin-bottom: 8px;
 }
 .list .network{
     margin: 20px 0 8px;
-} */
+}
+.footer-logos i{
+    font-size: 0.8rem;
+    margin: 0 12px 30px 0;
+}
+.copyright{
+    margin: 0;
+}
+.footer-logos p{
+   margin-bottom: 0;
+}
+.contact-medias{
+    padding: 60px 0 15px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+}
+.medias-text{
+    text-align: left;
+    width: 30%;
+}
+.medias-text h3{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+.medias-text p{
+    font-size: 0.8rem;
+}
+.medias-logos{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.medias-logos img{
+    width: 60px;
+}
+footer{
+    background: rgb(14, 14, 14);
+    color: whitesmoke;
+    padding: 25px;
+}
+footer h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*****************Mediat Query*****************/
+@media screen and (max-width:895px) {
+    nav li{
+        font-size: 0.7rem;
+    }
+    .main-header img {
+        width: 60%;
+      }
+    .contact-list .list {
+        padding-left: 15px;
+      }
+    .medias-logos img {
+        width: 40px;
+      }
+    footer ul {
+        flex-wrap: wrap;
+      }
+    footer li {
+        margin: 5px;
+      }
+}
+
+@media screen and (max-width:740px){
+    nav li{
+        display: none;
+    }
+    .icon-part-container {
+        display: block;
+      }
+      .icon-part {
+        padding: 0 0 30px;
+      }
+      .list-icon-part {
+        margin-top: 40px;
+      }
+      .header-news {
+        display: block;
+      }
+      .left-part {
+        width: 100%;
+      }
+      .left-part h2 {
+        text-align: center;
+      }
+      .left-part p {
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .main-news-container {
+        display: block;
+      }
+      .main-news-container div {
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        margin-top: 58px;
+      }
+      .main-news-container img {
+        width: 50%;
+      }
+      .contact {
+        display: none;
+      } 
+}
+
