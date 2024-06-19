@@ -41,7 +41,7 @@ p{
     transition: 0.5s;
 }
 .button:hover,
-footer a.button:hover{
+footer a:hover{
     border:1px solid skyblue;
     color:skyblue;
 }
@@ -135,6 +135,7 @@ textarea{
 /***************FOOTER*********************/
 footer{
     padding: 70px 0 90px;
+    position: relative;
 }
 footer::before{
     content: "";
@@ -144,4 +145,60 @@ footer::before{
     background: rgba(0, 0, 0, 0.086);
     left: 50%;
     transform: translateX(-50%);
+    top: 0;
+}
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin: 0 auto;
+    min-width: 300px;
+    /* max-width: 600px;
+    margin: 60px auto; */
+}
+footer a{
+    border: 1px solid rgba(0, 0, 0, 0.085);
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+@media screen and (max-width:543px) {
+   header{
+    display: flex;
+    flex-direction: column;
+   }  
+   .img-banner{
+    background: url(../img/banner.jpg) center/cover;
+    height: 400px;
+    width: 100%;
+    }
+    .container{
+        padding: 10px;
+    }
+    .Section-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .Section-1 .img{
+        display: none;
+    }
+    .Section-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .Section- .img{
+        display: none;
+    }
+    footer ul{
+        max-width: 300px;
+    }
+    footer ul a{
+        width: 50%;
+    }
 }
