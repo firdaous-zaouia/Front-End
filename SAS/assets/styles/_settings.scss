@@ -1,0 +1,16 @@
+//********Variables**************//
+$color1:pink;
+$color2:orange;
+$color3:cyan;
+$color4:rgb(236, 234, 234);
+$color5:rgb(18, 18, 18);
+
+//*********mixins*****************//
+@mixin centerChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: $color3;
+}
