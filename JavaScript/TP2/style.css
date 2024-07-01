@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background: url(./premium_photo-1678303397009-5b0cd545d7c2.avif) no-repeat;
+  width: 100vh;
+  min-height: 400vh;
+}
+nav {
+  color: rgb(187, 187, 31);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: rgb(26, 25, 25);
+  top: -80px;
+  transition: 0.3s;
+}
+h1 {
+  padding: 30px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+li {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
